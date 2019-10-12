@@ -10,7 +10,7 @@ callAPI.interceptors.request.use(function (config) {
   const token = getToken();
 
   if ( token != null ) {
-    config.headers.Authorization = `Bearer ${token}`;
+    config.headers.Authorization = `Basic ${token}`;
   }
   return config;
 },  (err) => {

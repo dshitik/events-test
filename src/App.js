@@ -21,7 +21,7 @@ const App = () => {
         <Switch>
           <PrivateRoute path={'/'} exact component={Home}/>
           <Route path={'/registration'} component={Registration}/>
-          <PrivateRoute exact path='/actions-list' component={EventsList}/>
+          <PrivateRoute path='/actions-list' component={EventsList}/>
           <PrivateRoute path='/action/:id' component={EventInfo}/>
         </Switch>
       </div>
