@@ -28,6 +28,7 @@ export const EventInfo = observer(() => {
   };
   const handleSendDataToServer = () => {
     patchEventsAPI({ id, data: eventState.changedInfo }).then(res => {
+      console.log(res, 'res!');
       eventState.changedInfo.clear()
     }).catch(err => {
       console.log({ err })

@@ -95,10 +95,10 @@ const Store = types.model({
       };
       self.currentEvent.loading = false;
     } catch ( error ) {
-      self.currentEvent.error = true
+      self.currentEvent.error = true;
       self.currentEvent.loading = false;
     }
-  }),
+  })
 }));
 
 const store = Store.create({
